@@ -1,5 +1,6 @@
 #include"Controll.h"
 #include<iostream>
+
 using std::cin;
 using std::cout;
 using std::endl;
@@ -87,7 +88,7 @@ void Controll::change(int id,int cache_adr,int mem_adr){
         this->share[mem_adr]++;
     }else if(mem_status=='I') this->c[id].toI();
 
-    this->c[id].address=mem_adr;
+    this->c[id].set_address(mem_adr);
     return;
 }
 void Controll::run(){

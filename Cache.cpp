@@ -1,9 +1,9 @@
 #include"Cache.h"
-#include"Status.h"
 #include<iostream>
 
 using std::cout;
 using std::endl;
+
 Cache::Cache(){
     this->id=-1;
     this->address=-1;

@@ -1,5 +1,4 @@
 #include"Memory.h"
-#include"Status.h"
 #include<iostream>
 
 using std::cout;
@@ -16,7 +15,7 @@ Memory::Memory(int id,int address,int status){
     this->status=status;
 }
 void Memory::print(){
-    cout<<"Memory "<<this->get_id()<<": the status is "<< this->get_status()<<","<<"the data is "<<this->get_address()<<"."<<endl;
+    cout<<"Memory "<<this->get_id()<<": the status is "<< this->get_status()<<","<<"the address is "<<this->get_address()<<"."<<endl;
 }
 bool Memory::visit(int address){
     return true;
