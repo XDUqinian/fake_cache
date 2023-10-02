@@ -6,7 +6,7 @@
 
 `./test`
 
-cin>>op (r or w) you can't read a valid address until write it.
+cin>>op (r or w) you can't read a invalid address until write it.
 
 cin>>id (select a cache)
 
