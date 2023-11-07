@@ -4,6 +4,7 @@
 
 #include"Controll.h"
 #include<iostream>
+#include<fstream>
 
 using std::cin;
 using std::cout;
@@ -95,10 +96,11 @@ void Controll::change(int id,int cache_adr,int mem_adr){
     this->c[id].set_address(mem_adr);
     return;
 }
-void Controll::run(){
-    int id,address;
-    char op;
-    cin>>op>>id>>address;
+void Controll::run(char op,int id,int address){   
+    // int id,address;
+    // char op;
+    // cin>>op>>id>>address;
+    cout<<"Cache "<<id<<": "<<op<<" "<<address<<endl;
     if(op=='r'){
         this->read(id,address);
     }else if(op=='w'){

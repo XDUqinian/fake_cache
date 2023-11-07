@@ -8,7 +8,6 @@
 #include"Status.h"
 #include"Cache.h"
 #include"Memory.h"
-#include<queue>
 
 class Controll{
     public:
@@ -17,7 +16,7 @@ class Controll{
         int share[10];
 
         Controll();
-        void run();
+        void run(char op,int id,int address);
         void read(int id,int address);
         void write(int id,int address);
         void change(int id,int cache_adr,int mem_adr);
